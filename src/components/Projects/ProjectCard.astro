@@ -1,0 +1,35 @@
+---
+interface Props {
+  imgUrl: string;
+  name: string;
+  githubUrl: string;
+  alt: string;
+  languages: { name: string; urlLan: string }[];
+}
+
+const { imgUrl, name, githubUrl, alt, languages } = Astro.props;
+---
+
+<div
+  class='hover:-translate-y-2 transiton-all duration-300 card__project bg-[#15121F] flex flex-col rounded-2xl'
+>
+  <img class='w-full rounded-t-2xl' src={imgUrl} alt={alt} />
+  <div class='flex justify-between items-center px-8 md:px-6 py-1 text-center'>
+    <span class='text-white my-3 text-lg tracking-wide'>{name}</span>
+
+    <a href={githubUrl}
+      ><i class='fa-brands fa-github text-2xl text-enfasys'></i></a
+    >
+  </div>
+  <div class='flex flex-row justify-evenly pb-4 w-1/2'>
+    {
+      languages.map(({ name, urlLan }) => {
+        return <img class='w-auto h-5' src={urlLan} alt={name} />;
+      })
+    }
+  </div>
+</div>
+<style>
+  .card__project {
+  }
+</style>

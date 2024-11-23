@@ -24,13 +24,13 @@ const skills = [
     {
       skills.map(({ imgUrl, name, alt }) => {
         return (
-          <div class='backdrop-blur-sm bg-white/10 group hover:bg-opacity-90 text-center flex flex-col py-5 items-center border-gray-400 border-solid rounded-lg gap-y-2 shadow-xl transition-all duration-300'>
+          <div class='backdrop-blur-sm bg-gray-700/10 group hover:bg-opacity-90 text-center flex flex-col py-5 items-center border-gray-400 border-solid rounded-lg gap-y-2 shadow-xl transition-all duration-300'>
             <img
               class='h-14 w-14 group-hover:scale-110 transition-all duration-300'
               src={imgUrl}
               alt={alt}
             />
-            <p class='text-white font-semibold group-hover:scale-110 transition-all duration-300'>
+            <p class='text-white text-lg pt-2 group-hover:scale-110 transition-all duration-300'>
               {name}
             </p>
           </div>

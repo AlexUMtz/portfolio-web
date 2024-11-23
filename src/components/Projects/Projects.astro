@@ -1,0 +1,92 @@
+---
+import ProjectCard from './ProjectCard.astro';
+
+const projectsData = [
+  {
+    imgUrl: '/p1.png',
+    name: 'Proyecto 1',
+    githubUrl: 'http://www.github.com',
+    alt: 'proyecto-1',
+    languages: [
+      {
+        name: 'JavaScript',
+        urlLan: '/js.svg',
+      },
+      {
+        name: 'Tailwind',
+        urlLan: '/tailwindcss.svg',
+      },
+      {
+        name: 'Html',
+        urlLan: '/html5.svg',
+      },
+    ],
+  },
+  {
+    imgUrl: '/p1.png',
+    name: 'Proyecto 1',
+    githubUrl: 'http://www.github.com',
+    alt: 'proyecto-1',
+    languages: [
+      {
+        name: 'JavaScript',
+        urlLan: '/js.svg',
+      },
+      {
+        name: 'Tailwind',
+        urlLan: '/tailwindcss.svg',
+      },
+      {
+        name: 'Html',
+        urlLan: '/html5.svg',
+      },
+    ],
+  },
+  {
+    imgUrl: '/p1.png',
+    name: 'Proyecto 1',
+    githubUrl: 'http://www.github.com',
+    alt: 'proyecto-1',
+    languages: [
+      {
+        name: 'JavaScript',
+        urlLan: '/js.svg',
+      },
+      {
+        name: 'Tailwind',
+        urlLan: '/tailwindcss.svg',
+      },
+      {
+        name: 'Html',
+        urlLan: '/html5.svg',
+      },
+    ],
+  },
+];
+---
+
+<section class='section-container'>
+  <div class='text-center flex flex-col w-full gap-6'>
+    <h2 class='text-title'>Proyectos</h2>
+
+    <p class='text-subtitle'>
+      Proyectos que he desarollado utilizando diversas tecnologías y
+      herramientas
+    </p>
+  </div>
+  <div class='py-8 grid grid-cols-1 md:grid-cols-3 gap-8'>
+    {
+      projectsData.map(({ imgUrl, name, githubUrl, alt, languages }) => {
+        return (
+          <ProjectCard
+            imgUrl={imgUrl!}
+            name={name!}
+            githubUrl={githubUrl!}
+            alt={alt!}
+            languages={languages!}
+          />
+        );
+      })
+    }
+  </div>
+</section>
