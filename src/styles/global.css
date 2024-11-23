@@ -5,6 +5,18 @@
 body {
   @apply font-poppins;
 }
+* {
+  scroll-behavior: smooth;
+}
 
 @layer components {
+  .text-title {
+    @apply text-5xl font-bold mb-3 text-white;
+  }
+  .text-subtitle {
+    @apply text-xl text-gray-400;
+  }
+  .section-container {
+    @apply m-auto py-28 px-10 md:px-36;
+  }
 }
