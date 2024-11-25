@@ -11,8 +11,13 @@ export default {
         background: '',
         enfasys: '#4ADFBF',
         backgroundNav: '#0B0A11',
+        backgroundFooter: '#151221',
         backgroundPurple: '#0e0c15 ',
         backgroundBlue: '#17103e',
+        borderPurple: '#252134',
+        textPurple: '#ac6aff',
+        text: '#4ADFBF',
+        border: '#4ADFBF',
       },
       boxShadow: {
         profile: 'inset 0 0 0 9px rgba(255, 255, 255, 0.1)',
