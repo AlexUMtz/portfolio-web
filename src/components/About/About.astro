@@ -1,41 +1,52 @@
-<section class='about__container section-container flex flex-col gap-y-4'>
-  <div class='flex flex-col justify-center items-center gap-y-6'>
+<section
+  id='about'
+  class='bg-blueDark about__container section-container flex flex-col gap-y-4'
+>
+  <div class='text-center flex flex-col justify-center items-center gap-y-6'>
     <h2 class='text-title text-white'>
       <span class='text-enfasys'>&lt;&gt; </span>Acerca de mi
     </h2>
-    <h4 class='text-subtitle text-gray-400'>Conoceme</h4>
+    <h4 class='text-subtitle'>Conóceme</h4>
   </div>
   <div
-    class='grid grid-cols-1 md:grid-cols-[repeat(2,1fr)] items-center py-6 md:px-28 gap-x-2 gap-y-8'
+    class='grid grid-cols-1 md:grid-cols-[repeat(2,1fr)] items-center py-6 gap-x-2 gap-y-10'
   >
     <img
-      class='justify-self-center rounded-xl shadow-xl shadow-gray-400 w-auto h-[250px]'
+      class='scroll-reveal justify-self-center rounded-xl shadow-2xl w-auto h-[280px] md:h-[350px]'
       src='/profile.webp'
       alt='Imagen-de-perfil'
     />
 
-    <div class=''>
-      <p class='text-lg text-gray-300 text-left my-5'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-        incidunt? Aut possimus suscipit dignissimos commodi vitae rem, est
-        mollitia quasi!
+    <div class='scroll-reveal-x flex flex-col gap-4'>
+      <p class='text-base font-light text-gray-300 text-left my-0'>
+        <span class='font-bold'>👋 ¡Hola! Soy Alejandro Martínez</span>, una
+        persona apasionada por la tecnología y el aprendizaje constante.
+        Disfruto enfrentar nuevos retos y estoy comprometido con crecer tanto
+        profesional como personalmente. La curiosidad por los avances
+        tecnológicos diarios me inspira a seguir explorando y aprendiendo en
+        este fascinante mundo. Valoro profundamente la convivencia con mis
+        amigos y mi familia, quienes me motivan a ser mejor cada día. En mi
+        tiempo libre, disfruto leer libros que enriquecen mi perspectiva,
+        escuchar música y rodearme de las personas que más aprecio.Tengo la
+        convicción de que mi camino está lleno de posibilidades emocionantes y
+        un futuro brillante.
+      </p>
+      <p class='text-blueText font-bold'>
+        ¡Te invito a conocer más sobre mí y mis proyectos!
       </p>
       <button
-        class='bg-sky-600 text-white font-semibold px-3 py-3 rounded-lg hover:-translate-y-1 transition-all duration-200'
-        >Descargar CV</button
+        class='bg-enfasys/50 text-white w-max font-medium px-4 py-2 rounded-lg hover:opacity-80 transition-all duration-200'
+        ><a href='/CV_Alejandro_Martinez.pdf' download='CV_Alejandro_Martinez'
+          >Descargar CV</a
+        ></button
       >
     </div>
   </div>
 </section>
 <style>
   .about__container {
-    background: #17103e;
-    background: -webkit-linear-gradient(
-      180deg,
-      #17103e 0%,
-      #0e0c15 50%,
-      #0e0c15 100%
-    );
-    background: linear-gradient(180deg, #17103e 0%, #0e0c15 50%, #0e0c15 100%);
+    /* background: #0e0c10;
+    background: -webkit-linear-gradient(0deg, #0e0c10 0%, #101842 100%);
+    background: linear-gradient(0deg, #0e0c10 0%, #101842 100%); */
   }
 </style>

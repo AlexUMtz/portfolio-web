@@ -12,7 +12,6 @@ const { title } = Astro.props;
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
 
@@ -33,10 +32,56 @@ const { title } = Astro.props;
       referrerpolicy='no-referrer'
     />
 
+    <!-- EmailJs -->
+    <script
+      type='text/javascript'
+      src='https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js'
+    ></script>
+    <script type='text/javascript'>
+      (function () {
+        emailjs.init({
+          publicKey: 'MMWiJzE_8N1TtiuON',
+        });
+      })();
+    </script>
+
     <title>{title}</title>
   </head>
-  <body class='bg-backgroundPurple'>
+  <body class='bg-blueDark'>
     <slot />
   </body>
 </html>
-<style is:global></style>
+<style is:global>
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes appear-x {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .scroll-reveal {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+  .scroll-reveal-x {
+    animation: appear-x linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+</style>

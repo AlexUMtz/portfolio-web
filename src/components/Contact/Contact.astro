@@ -2,45 +2,52 @@
 import ContactForm from './ContactForm.astro';
 ---
 
-<section class='contact__container section-container flex flex-col gap-y-4'>
+<section
+  id='contact'
+  class='bg-blueDark contact__container section-container flex flex-col gap-y-4'
+>
   <div class='flex flex-col items-center gap-y-7'>
     <h2 class='text-title'>
       <span class='text-enfasys'>&lt;&gt; </span>Contacto
     </h2>
-    <p class='text-subtitle'>
+    <p class='text-blueText font-light text-base'>
       Puedes contactarme por medio de mis redes o mandando un correo
     </p>
   </div>
   <div class='pt-7 flex flex-col md:flex-row gap-5'>
-    <div class='flex flex-col gap-4 w-full'>
+    <div class='scroll-reveal-x flex flex-col gap-4 w-full'>
       <div
-        class='bg-backgroundPurple flex flex-col gap-3 py-6 w-full items-center border-2 border-border rounded-md'
+        class='bg-blueDark flex flex-col gap-3 py-6 w-full items-center border-2 border-enfasys rounded-md'
       >
         <a href='mailto:alejandro_umartinez@outlook.com' title='Enviar correo'
           ><i
             class='text-white text-3xl hover:text-enfasys fa-regular fa-envelope'
           ></i></a
         >
-        <span class='text-text text-base'>alejandro_umartinez@outlook.com</span>
+        <span class='text-enfasys/80 text-base'
+          >alejandro_umartinez@outlook.com</span
+        >
       </div>
       <div
-        class='bg-backgroundPurple flex flex-col gap-3 py-6 w-full items-center border-2 border-border rounded-md'
+        class='bg-blueDark flex flex-col gap-3 py-6 w-full items-center border-2 border-enfasys rounded-md'
       >
-        <a href=''
+        <a
+          href='https://www.linkedin.com/in/alejandro-umartinez/'
+          target='_blank'
           ><i
             class='text-white text-3xl hover:text-enfasys fa-brands fa-linkedin'
           ></i></a
         >
-        <span class='text-text'>Alejandro Martinez</span>
+        <span class='text-enfasys/80'>Alejandro Martinez</span>
       </div>
       <div
-        class='bg-backgroundPurple flex flex-col gap-3 py-6 w-full items-center border-2 border-border rounded-md'
+        class='bg-blueDark flex flex-col gap-3 py-6 w-full items-center border-2 border-enfasys rounded-md'
       >
-        <a href='https://github.com/AlexUMtz'
+        <a href='https://github.com/AlexUMtz' target='_blank'
           ><i class='text-white text-3xl hover:text-enfasys fa-brands fa-github'
           ></i></a
         >
-        <span class='text-text'>@AlexUMTZ</span>
+        <span class='text-enfasys/80'>@AlexUMTZ</span>
       </div>
     </div>
 
@@ -49,8 +56,8 @@ import ContactForm from './ContactForm.astro';
 </section>
 <style>
   .contact__container {
-    background: #151221;
-    background: -webkit-linear-gradient(0deg, #151221 0%, #0e0c10 100%);
-    background: linear-gradient(0deg, #151221 0%, #0e0c10 100%);
+    /* background: #0e0c15;
+    background: -webkit-linear-gradient(0deg, #0e0c15 0%, #0e0c10 100%);
+    background: linear-gradient(0deg, #0e0c15 0%, #0e0c10 100%); */
   }
 </style>

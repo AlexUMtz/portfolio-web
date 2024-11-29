@@ -1,14 +1,14 @@
 <header
-  class='bg-backgroundPurple md:backdrop-blur-sm md:bg-backgroundPurple/70 fixed w-full z-10'
+  class='bg-blueDark md:backdrop-blur-sm md:bg-blueDark/70 fixed w-full px-10 py-1 md:py-0 lg:px-28 z-10'
 >
   <nav
-    class='min-h-[10vh] md:min-h-[12vh] px-8 flex justify-between items-center m-auto md:max-w-[92%] z-0'
+    class='min-h-[10vh] md:min-h-[10vh] flex justify-between items-center z-0'
   >
     <div class=''>
       <svg
-        class='w-auto h-10'
-        width='200'
-        height='200'
+        class='w-auto h-9 md:h-10'
+        width='150'
+        height='150'
         viewBox='0 0 100 100'
         xmlns='http://www.w3.org/2000/svg'
       >
@@ -38,51 +38,48 @@
 
     <div
       id='nav-menu'
-      class='bg-backgroundPurple md:bg-transparent fixed md:static left-0 top-[-100%] w-full md:w-auto flex md:items-center justify-between gap-3 transition-all duration-200 z-10'
+      class='bg-blueDark md:bg-transparent fixed md:static left-0 top-[-100%] w-full md:w-auto flex md:items-center gap-3 transition-all duration-200 z-10'
     >
       <ul
-        class='flex flex-col gap-9 px-5 py-9 md:p-0 md:flex-row md:items-center md:gap-4'
+        class='flex flex-col gap-6 pl-7 md:px-0 py-8 md:p-0 md:flex-row md:items-center'
       >
         <li
-          class='text-lg md:text-base text-white hover:text-enfasys py-1 px-3 rounded transition duration-300'
+          class='text-base font-light text-white hover:text-enfasys py-1 px-3 transition duration-300'
         >
-          <a href='#'>Home</a>
+          <a class='active' href='#home'>Home</a>
         </li>
         <li
-          class='text-lg md:text-base text-white hover:text-enfasys py-1 px-3 rounded transition duration-300'
+          class='text-base font-light text-white hover:text-enfasys py-1 px-3 transition duration-300'
         >
-          <a href='#'>Acerca de</a>
+          <a href='#about'>Acerca de</a>
         </li>
         <li
-          class='text-lg md:text-base text-white hover:text-enfasys py-1 px-3 rounded transition duration-300'
+          class='text-base font-light text-white hover:text-enfasys py-1 px-3 transition duration-300'
         >
-          <a href='#'>Skills</a>
+          <a href='#skills'>Skills</a>
         </li>
         <li
-          class='text-lg md:text-base text-white hover:text-enfasys py-1 px-3 rounded transition duration-300'
+          class='text-base font-light text-white hover:text-enfasys py-1 px-3 transition duration-300'
         >
-          <a href='#'>Proyectos</a>
+          <a href='#projects'>Proyectos</a>
         </li>
         <li
-          class='text-lg md:text-base text-white hover:text-enfasys py-1 px-3 rounded transition duration-300'
+          class='text-base font-light text-white hover:text-enfasys py-1 px-3 transition duration-300'
         >
-          <a href='#'>Contacto</a>
+          <a href='#training'>Formación</a>
+        </li>
+        <li
+          class='text-base font-light text-white hover:text-enfasys py-1 pl-3 transition duration-300'
+        >
+          <a href='#contact'>Contacto</a>
         </li>
       </ul>
-
-      <!-- <div class='md:w-8 text-center'>
-        <i
-          id='dark-mode'
-          class='text-white fa-solid fa-moon pt-4 pr-7 md:p-0 text-2xl cursor-pointer'
-        ></i>
-      </div> -->
     </div>
 
     <div class='md:hidden'>
       <i
         id='menu-icon'
-        class='text-white fa-solid fa-bars text-2xl text-background transition-all'
-      ></i>
+        class='text-white fa-solid fa-bars text-2xl transition-all'></i>
     </div>
   </nav>
   <script>
@@ -102,5 +99,31 @@
       darkMode.classList.toggle('fa-sun');
       darkMode.classList.toggle('fa-moon');
     });
+
+    let sections = document.querySelectorAll('section');
+    let navLinks = document.querySelectorAll('#nav-menu ul li a');
+
+    window.onscroll = () => {
+      sections.forEach((sec) => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 120;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+          navLinks.forEach((links) => {
+            links.classList.remove('active');
+            document
+              .querySelector('#nav-menu ul li a[href*=' + id + ']')
+              ?.classList.add('active');
+          });
+        }
+      });
+    };
   </script>
 </header>
+<style>
+  a.active {
+    color: #4adfbf;
+  }
+</style>

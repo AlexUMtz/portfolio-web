@@ -3,24 +3,26 @@ import Social from './Social.astro';
 import Data from './Data.astro';
 ---
 
-<section class='pt-[10vh]'>
-  <div class='home__container'>
+<section
+  id='home'
+  class='home__container section-container bg-blueDark section-container pt-[10vh] md:pt-[10vh]'
+>
+  <div
+    class='home__content md:h-[90vh] flex gap-x-6 flex-col md:flex-row justify-between md:items-center'
+  >
+    <Social />
+    <Data />
     <div
-      class='home__content h-[90vh] grid grid-cols-[0.5fr_3fr] md:grid-cols-[116px_repeat(2,1fr)] md:items-center'
+      class='scroll-reveal-x pt-8 md:pt-0 m-auto md:m-0 -order-1 w-[250px] h-[250px] md:order-none md:w-full md:h-auto'
     >
-      <Social />
-      <div
-        class='home__img md:order-1 m-auto w-[280px] h-[280px] md:w-[350px] md:h-[350px] bg-[url("/profile.webp")] bg-no-repeat bg-cover bg-center md:justify-self-center shadow-profile animate-profile'
-      >
-      </div>
-      <Data />
+      <img class='shadow-profile animate-profile' src='/profile.webp' alt='' />
     </div>
   </div>
 </section>
 <style>
-  .home__container {
-    background: #17103e;
-    background: -webkit-linear-gradient(0deg, #17103e 0%, #0e0c15 100%);
-    background: linear-gradient(0deg, #17103e 0%, #0e0c15 100%);
-  }
+  /* .home__container {
+    background: #101842;
+    background: -webkit-linear-gradient(0deg, #101842 0%, #0b0a11 100%);
+    background: linear-gradient(0deg, #101842 0%, #0b0a11 100%);
+  } */
 </style>
