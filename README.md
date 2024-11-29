@@ -1,54 +1,37 @@
-# Astro Starter Kit: Basics
+# 🖥️ Mi Portafolio Web
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Bienvenido/a a mi portafolio web! Este proyecto está diseñado para mostrar mi trayectoria profesional, habilidades técnicas, y proyectos destacados como desarrollador.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Descripción
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este portafolio tiene como objetivo:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- Presentar mi perfil profesional de manera clara y atractiva.
+- Facilitar un medio para que posibles empleadores, clientes o colaboradores me conozcan mejor.
+- Mostrar mis proyectos, formación académica y formas de contacto.
 
-## 🚀 Project Structure
+Está desarrollado con **Astro** y utiliza **TailwindCSS** para un diseño responsivo y moderno.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Tecnologías utilizadas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Astro**: Framework de desarrollo web rápido y optimizado.
+- **TailwindCSS**: Framework de utilidades CSS para diseño responsivo.
+- **EmailJS** (o cualquier otro servicio) para el envío de correos.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🎨 Características principales
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Diseño Responsivo**: Optimizado para dispositivos móviles, tabletas y escritorios.
+- **Formulario de Contacto**: Permite a los usuarios enviarme un correo directamente.
+- **Proyectos Destacados**: Incluye una galería de proyectos con descripción e imágenes.
+- **Tema Personalizado**: Uso de una paleta de colores moderna y tipografía legible.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🌍 Portafolio en Producción
 
-## 🧞 Commands
+Puedes ver mi portafolio en producción haciendo clic en el siguiente enlace:
 
-All commands are run from the root of the project, from a terminal:
+## 📧 Contacto
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+¿Tienes alguna pregunta o propuesta? ¡No dudes en escribirme!
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Correo**: alejandro_umartinez@outlook.com
+- **LinkedIn**: [Mi perfil](https://www.linkedin.com/in/alejandro-umartinez/)
