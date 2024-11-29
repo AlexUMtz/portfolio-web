@@ -17,6 +17,6 @@ body {
     @apply text-lg md:text-xl text-blueText;
   }
   .section-container {
-    @apply m-auto  py-16 lg:py-24 px-10 lg:px-28;
+    @apply m-auto  py-16 lg:py-24 px-6 lg:px-28;
   }
 }

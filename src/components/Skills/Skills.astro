@@ -1,15 +1,19 @@
 ---
 const skills = [
-  { imgUrl: 'java.svg', name: 'Java', alt: 'Java-logo' },
-  { imgUrl: 'python.svg', name: 'Python', alt: 'Python-logo' },
-  { imgUrl: 'js.svg', name: 'JavaScript', alt: 'JS-logo' },
-  { imgUrl: 'react.svg', name: 'React', alt: 'React-logo' },
-  { imgUrl: 'html5.svg', name: 'HTML', alt: 'HTML-logo' },
-  { imgUrl: 'css.svg', name: 'CSS', alt: 'CSS-logo' },
-  { imgUrl: 'tailwindcss.svg', name: 'Tailwind', alt: 'Tailwind-logo' },
-  { imgUrl: 'aws.svg', name: 'AWS', alt: 'AWS-logo' },
-  { imgUrl: 'git.svg', name: 'Git', alt: 'Git-logo' },
-  { imgUrl: 'linux.svg', name: 'Linux', alt: 'Linux-logo' },
+  { imgUrl: '/portfolio-web/java.svg', name: 'Java', alt: 'Java-logo' },
+  { imgUrl: '/portfolio-web/python.svg', name: 'Python', alt: 'Python-logo' },
+  { imgUrl: '/portfolio-web/js.svg', name: 'JavaScript', alt: 'JS-logo' },
+  { imgUrl: '/portfolio-web/react.svg', name: 'React', alt: 'React-logo' },
+  { imgUrl: '/portfolio-web/html5.svg', name: 'HTML', alt: 'HTML-logo' },
+  { imgUrl: '/portfolio-web/css.svg', name: 'CSS', alt: 'CSS-logo' },
+  {
+    imgUrl: '/portfolio-web/tailwindcss.svg',
+    name: 'Tailwind',
+    alt: 'Tailwind-logo',
+  },
+  { imgUrl: '/portfolio-web/aws.svg', name: 'AWS', alt: 'AWS-logo' },
+  { imgUrl: '/portfolio-web/git.svg', name: 'Git', alt: 'Git-logo' },
+  { imgUrl: '/portfolio-web/linux.svg', name: 'Linux', alt: 'Linux-logo' },
 ];
 ---
 
@@ -24,7 +28,7 @@ const skills = [
     <p class='text-subtitle'>Mis habilidades</p>
   </div>
   <div
-    class='scroll-reveal-x grid grid-cols-2 md:grid-cols-5 justify-evenly gap-5'
+    class='scroll-reveal grid grid-cols-2 md:grid-cols-5 justify-evenly gap-5'
   >
     {
       skills.map(({ imgUrl, name, alt }) => {
