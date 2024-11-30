@@ -1,0 +1,29 @@
+<svg
+        class='w-auto h-9 md:h-10'
+        width='150'
+        height='150'
+        viewBox='0 0 100 100'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <!-- Hexágono con borde negro -->
+        <polygon
+          points='50,5 95,25 95,75 50,95 5,75 5,25'
+          fill='transparent'
+          class=''
+          stroke='#4ADFBF'
+          stroke-width='8'></polygon>
+
+        <!-- Texto dentro del hexágono -->
+        <text
+          x='50%'
+          y='50%'
+          font-size='35'
+          text-anchor='middle'
+          dy='.3em'
+          font-weight='bold'
+          class=''
+          fill='#4ADFBF'
+        >
+          AM
+        </text>
+      </svg>
